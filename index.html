@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Francisco 10 - Guía de Alicante</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #1a1a1a;
+            --white: #ffffff;
+            --gray: #666666;
+            --light-gray: #f5f5f5;
+            --accent: #c84b31;
+        }
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            background: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            padding: 60px 30px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--black);
+            letter-spacing: 4px;
+            margin-bottom: 80px;
+            text-transform: uppercase;
+        }
+
+        .language-section {
+            margin-bottom: 50px;
+        }
+
+        .language-title {
+            font-size: 1.4rem;
+            font-weight: normal;
+            color: var(--black);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 14px 50px;
+            border: 2px solid var(--black);
+            background: transparent;
+            color: var(--black);
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 0.9rem;
+            font-weight: normal;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .divider {
+            width: 40px;
+            height: 1px;
+            background: var(--gray);
+            margin: 0 auto 50px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 50px 20px;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+                margin-bottom: 60px;
+            }
+
+            .download-btn {
+                padding: 12px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">San Francisco 10</h1>
+        
+        <div class="language-section">
+            <p class="language-title">Español</p>
+            <a href="pdfs/Guia_SF10ES.pdf" class="download-btn" target="_blank">Descargar</a>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="language-section">
+            <p class="language-title">English</p>
+            <a href="pdfs/Guide_SF10EN.pdf" class="download-btn" target="_blank">Download</a>
+        </div>
+    </div>
+</body>
+</html>
