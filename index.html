@@ -97,15 +97,21 @@
         }
 
         @media (max-width: 480px) {
+            body {
+                padding: 0;
+            }
+
             .container {
-                padding: 30px 15px;
+                padding: 20px 15px 40px;
             }
 
             .logo {
-                margin-bottom: 35px;
+                margin-bottom: 30px;
             }
 
             .logo img {
+                width: 100vw;
+                max-width: none;
                 margin-left: calc(-50vw + 50%);
             }
 
@@ -119,7 +125,7 @@
 <body>
     <div class="container">
         <div class="logo">
-            <img src="img/logo-1.jpeg" alt="San Francisco 10 - Alicante">
+            <img src="img/logo.png" alt="San Francisco 10 - Alicante">
         </div>
         
         <div class="language-section">
