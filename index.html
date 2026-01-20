@@ -12,17 +12,17 @@
         }
 
         :root {
-            --black: #1a1a1a;
+            --navy: #0a1628;
+            --navy-light: #132038;
             --white: #ffffff;
-            --gray: #666666;
-            --light-gray: #f5f5f5;
-            --accent: #c84b31;
+            --gold: #c9a962;
+            --gray-light: rgba(255, 255, 255, 0.7);
         }
 
         body {
             font-family: Helvetica, Arial, sans-serif;
             min-height: 100vh;
-            background: var(--white);
+            background: linear-gradient(165deg, var(--navy-light) 0%, var(--navy) 100%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,36 +37,44 @@
         }
 
         .logo {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: bold;
-            color: var(--black);
-            letter-spacing: 4px;
-            margin-bottom: 80px;
+            color: var(--white);
+            letter-spacing: 6px;
+            margin-bottom: 12px;
             text-transform: uppercase;
         }
 
+        .location {
+            font-size: 0.8rem;
+            color: var(--gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 70px;
+        }
+
         .language-section {
-            margin-bottom: 50px;
+            margin-bottom: 45px;
         }
 
         .language-title {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: normal;
-            color: var(--black);
-            margin-bottom: 15px;
-            letter-spacing: 1px;
+            color: var(--gray-light);
+            margin-bottom: 18px;
+            letter-spacing: 2px;
         }
 
         .download-btn {
             display: inline-block;
-            padding: 14px 50px;
-            border: 2px solid var(--black);
+            padding: 16px 55px;
+            border: 1px solid var(--gold);
             background: transparent;
-            color: var(--black);
+            color: var(--gold);
             font-family: Helvetica, Arial, sans-serif;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: normal;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
@@ -74,15 +82,15 @@
         }
 
         .download-btn:hover {
-            background: var(--black);
-            color: var(--white);
+            background: var(--gold);
+            color: var(--navy);
         }
 
         .divider {
-            width: 40px;
+            width: 50px;
             height: 1px;
-            background: var(--gray);
-            margin: 0 auto 50px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 0 auto 45px;
         }
 
         @media (max-width: 480px) {
@@ -91,12 +99,18 @@
             }
             
             .logo {
-                font-size: 1.5rem;
-                margin-bottom: 60px;
+                font-size: 1.4rem;
+                letter-spacing: 4px;
+                margin-bottom: 10px;
+            }
+
+            .location {
+                margin-bottom: 55px;
             }
 
             .download-btn {
-                padding: 12px 40px;
+                padding: 14px 45px;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -104,6 +118,7 @@
 <body>
     <div class="container">
         <h1 class="logo">San Francisco 10</h1>
+        <p class="location">Alicante</p>
         
         <div class="language-section">
             <p class="language-title">Español</p>
