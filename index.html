@@ -12,17 +12,18 @@
         }
 
         :root {
-            --navy: #0a1628;
-            --navy-light: #132038;
+            --navy: #1a2a4a;
+            --navy-light: #2d4a6f;
             --white: #ffffff;
-            --gold: #c9a962;
-            --gray-light: rgba(255, 255, 255, 0.7);
+            --cream: #fdfcfa;
+            --terracotta: #c17f59;
+            --gray: #8a9aaa;
         }
 
         body {
             font-family: Helvetica, Arial, sans-serif;
             min-height: 100vh;
-            background: linear-gradient(165deg, var(--navy-light) 0%, var(--navy) 100%);
+            background: var(--cream);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,47 +31,40 @@
         }
 
         .container {
-            max-width: 400px;
+            max-width: 420px;
             width: 100%;
             text-align: center;
-            padding: 60px 30px;
+            padding: 50px 30px;
         }
 
         .logo {
-            font-size: 1.6rem;
-            font-weight: bold;
-            color: var(--white);
-            letter-spacing: 6px;
-            margin-bottom: 12px;
-            text-transform: uppercase;
+            margin-bottom: 60px;
         }
 
-        .location {
-            font-size: 0.8rem;
-            color: var(--gold);
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 70px;
+        .logo img {
+            max-width: 100%;
+            height: auto;
+            max-height: 180px;
         }
 
         .language-section {
-            margin-bottom: 45px;
+            margin-bottom: 40px;
         }
 
         .language-title {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: normal;
-            color: var(--gray-light);
-            margin-bottom: 18px;
+            color: var(--navy);
+            margin-bottom: 16px;
             letter-spacing: 2px;
         }
 
         .download-btn {
             display: inline-block;
-            padding: 16px 55px;
-            border: 1px solid var(--gold);
+            padding: 15px 50px;
+            border: 1.5px solid var(--navy);
             background: transparent;
-            color: var(--gold);
+            color: var(--navy);
             font-family: Helvetica, Arial, sans-serif;
             font-size: 0.85rem;
             font-weight: normal;
@@ -82,34 +76,39 @@
         }
 
         .download-btn:hover {
-            background: var(--gold);
-            color: var(--navy);
+            background: var(--navy);
+            color: var(--white);
         }
 
         .divider {
-            width: 50px;
+            width: 60px;
             height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold), transparent);
-            margin: 0 auto 45px;
+            background: var(--gray);
+            margin: 0 auto 40px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.75rem;
+            color: var(--gray);
+            letter-spacing: 1px;
         }
 
         @media (max-width: 480px) {
             .container {
-                padding: 50px 20px;
+                padding: 40px 20px;
+            }
+
+            .logo img {
+                max-height: 140px;
             }
             
             .logo {
-                font-size: 1.4rem;
-                letter-spacing: 4px;
-                margin-bottom: 10px;
-            }
-
-            .location {
-                margin-bottom: 55px;
+                margin-bottom: 45px;
             }
 
             .download-btn {
-                padding: 14px 45px;
+                padding: 14px 42px;
                 font-size: 0.8rem;
             }
         }
@@ -117,8 +116,9 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="logo">San Francisco 10</h1>
-        <p class="location">Alicante</p>
+        <div class="logo">
+            <img src="img/logo.jpeg" alt="San Francisco 10 - Alicante">
+        </div>
         
         <div class="language-section">
             <p class="language-title">Español</p>
@@ -131,6 +131,8 @@
             <p class="language-title">English</p>
             <a href="pdfs/Guide_SF10EN.pdf" class="download-btn" target="_blank">Download</a>
         </div>
+
+        <p class="footer">Alicante, España</p>
     </div>
 </body>
 </html>
